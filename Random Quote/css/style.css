@@ -1,0 +1,41 @@
+p, h1, h2, h3, h4 {
+  color: #666;
+}
+
+h3 {
+  font-family: oswald;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
+
+body{
+height: 500px;
+overflow: auto;
+}
+
+header {
+  background-color: #F0B27A;
+  padding: 20px 10px 20px 10px;
+}
+
+.container-fluid {
+  border-bottom: 5px solid #3498DB;
+  border-top: 5px solid #3498DB;
+  border-radius: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+footer {
+  background-color: #F0B27A;
+  padding: 20px 10px 20px 10px;
+}
+
+#quote {
+  font-size: 20px;
+  color: #F4D03F;
+  padding: 20px;
+}

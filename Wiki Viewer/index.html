@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wiki Viewer</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Inconsolata'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid text-center">
+  <div ng-app="wikiApp" ng-controller="wikiCtrl">
+  <header>
+    <h1><b>Wiki Viewer</b></h1>
+  </header>
+  <br><br>
+    <input type="text" class='form-control' ng-model="searchwiki" rows='1' id='searcwiki' placeholder="Search Here">
+  <br><br>
+    <button id="searchbtn" class="btn btn-primary" type="submit" ng-click='search(searchwiki)'>Search »</button>
+<!-- tabel dan js di ambil, di modifikasi, dan dipelajari dari "http://www.learnwebprogramming.info" -->
+ <p>
+ <table class="table table-striped table-bordered table-hover">
+    <thead ng-show="searchResults != null">
+      <tr>
+        <th>Title</th>
+        <th>Click to go to the Wiki page</th>
+      </tr>
+    </thead>
+    <tr ng-repeat="result in searchResults">
+      <td><a href="https://en.wikipedia.org/?curid={{result.pageid}}" target="_blank">
+             {{result.title}}</a>
+      </td>
+       <td><a href="https://en.wikipedia.org/?curid={{result.pageid}}" target="_blank">
+             {{result.extract}}</a>
+      </td>
+    </tr>
+  </table>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+  background: url(http://vignette2.wikia.nocookie.net/k-anime/images/6/63/Wikipedia-logo.png/revision/latest?cb=20130208011045);
+}
+
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#submitBtn {
+  margin: 10px 5px 10px 5px;
+  background-color: #60A887;
+}
+
+table {
+  background-color: grey;
+}
